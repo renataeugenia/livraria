@@ -1,0 +1,75 @@
+<main class="formulario">
+  <h1 class="uk-text-center uk-margin-large-top uk-margin-medium-bottom">StarBooks</h1>
+  <form class="uk-grid-medium" uk-grid>
+    <fieldset class="uk-fieldset">
+      <legend class="uk-legend">Titulo do Livro</legend>
+      <div class="uk-margin">
+        <input class="uk-input uk-form-width-large" type="text" placeholder="digite o nome do livro aqui...">
+      </div>
+      <legend class="uk-legend">Autor(es) do Livro</legend>
+      <div class="uk-margin">
+        <input class="uk-input uk-form-width-large" type="text" placeholder="digite o nome do(s) autor(es) aqui...">
+      </div>
+      <legend class="uk-legend">Ano de Publicação e ISBN</legend>
+      <div class="uk-margin">
+        <input class="uk-input uk-form-width-medium" type="text" placeholder="0000" maxlength="4">
+        <input class="uk-input uk-form-width-medium" type="text" placeholder="0000000000000" maxlength="13">
+      </div>
+      <legend class="uk-legend">Capa do Livro</legend>
+      <div class="uk-margin" uk-margin>
+        <div uk-form-custom="target: true">
+          <input type="file">
+          <input class="uk-input uk-form-width-medium" type="text" placeholder="escolher foto" disabled>
+        </div>
+        <button class="uk-button uk-button-secondary uk-button-default">enviar foto</button>
+      </div>
+      <legend class="uk-legend">Observações do Leitor</legend>
+      <div class="uk-margin">
+        <textarea class="uk-textarea" rows="5" placeholder="descreva suas observações sobre o livro..."></textarea>
+      </div>
+      <legend class="uk-legend">Genero Literário</legend>
+      <div class="uk-margin">
+        <div uk-form-custom="target: > * > span:last-child">
+          <select>
+            <option value="1">ação,
+              aventura, policial</option>
+            <option value="2">ficção cientifica,
+              horror, suspense</option>
+            <option value="3">contos,
+              romance, realismo magico</option>
+            <option value="4">biografias, memorias e autobiografias</option>
+            <option value="5">arte, fotografia e história</option>
+            <option value="6">viagem, fotografia, gastronomia</option>
+            <option value="7">outros</option>
+          </select>
+          <span class="uk-link">
+            <span uk-icon="icon: pencil"></span>
+            <span></span>
+          </span>
+        </div>
+      </div>
+      <legend class="uk-legend">Estado de conservação do livro</legend>
+      <div class="uk-margin">
+        <div class="uk-form-controls">
+          <select class="uk-select" id="form-stacked-select">
+            <option>quase novo!...marcas deixadas pelo antigo dono.</option>
+            <option>bem conservado!...aparência clássica de um livro usado.</option>
+            <option>mumificado!...encadernação fragil, manchas de oxidação e ou umidade nas
+              páginas.</option>
+          </select>
+        </div>
+      </div>
+      <legend class="uk-legend">Local de armazenamento do livro</legend>
+      <div class="uk-margin">
+        <textarea class="uk-textarea" rows="3" placeholder="descreva onde voce  guarda o livro..."></textarea>
+      </div>
+      <legend class="uk-legend">Finalizar Cadastro</legend>
+      <div class="uk-button-group">
+        <button class="uk-button uk-button-primary">Cadastrar Livro</button>
+        <button class="uk-button uk-button-secondary">Limpar Formulario </button>
+      </div>
+
+
+    </fieldset>
+  </form>
+</main>

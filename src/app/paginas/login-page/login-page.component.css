@@ -1,0 +1,11 @@
+.novocadastro{
+  position: relative;
+  text-align: center;
+  color:#45858c;
+  height: auto;
+  padding: 2rem 1rem;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  background-size: auto;
+  background-size: contain;
+}
