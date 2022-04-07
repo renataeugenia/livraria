@@ -1,4 +1,10 @@
 # Livraria
+projeto de um site para troca de livros
+
+
+
+
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.6.
 
